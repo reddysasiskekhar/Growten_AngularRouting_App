@@ -1,0 +1,31 @@
+<!-- <p>food works!</p> -->
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <!-- [{
+            foodID : 1 ,FoodItems:"veg"
+        },
+        {
+            foodID : 2 ,FoodItems : "non-veg"
+        }] -->
+
+        <!-- here one thing we have to remember 
+        <./fooddetails food/fooddetails>
+        <../fooddetails fooddetails> -->
+
+
+
+        <tr *ngFor="let item of foodItems">
+            <!-- <li><a routerLink="fooddetails">Fooddetails</a></li> -->
+        <td><a routerLink="../fooddetails">{{item.foodID}}</a></td>
+        <td>{{item.FoodItem}}</td>
+    </tr>
+    </tbody>
+</table>

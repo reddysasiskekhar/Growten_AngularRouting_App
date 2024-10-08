@@ -6,7 +6,7 @@
             <th>id</th>
             <th>name</th>
         </tr>
-        
+
     </thead>
     <tbody>
         <!-- [{
@@ -24,8 +24,8 @@
 
         <tr *ngFor="let item of foodItems">
             <!-- <li><a routerLink="fooddetails">Fooddetails</a></li> -->
-        <td><a routerLink="../fooddetails">{{item.foodID}}</a></td>
-        <td>{{item.FoodItem}}</td>
-    </tr>
+            <td><a routerLink="../fooddetails/{{item.foodID}}">{{item.foodID}}</a></td>
+            <td>{{item.FoodItem}}</td>
+        </tr>
     </tbody>
 </table>
